@@ -1,23 +1,57 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-    <div class="social-links">
-      <a class="social-link social-github" href="https://github.com/{{ site.github_username }}">
-        <i class="icon-github"></i>
-      </a>
-      <a class="social-link social-twitter" href="https://twitter.com/{{ site.twitter_username }}">
-        <i class="icon-twitter"></i>
-      </a>
-      <a class="social-link social-instagram" href="https://instagram.com/{{ site.instagram_username }}">
-        <i class="icon-instagram"></i>
-      </a>
-      <a class="social-link social-rss" href="{{ "/feed.xml" | relative_url  }}" target="_blank">
-        <i class="icon-rss"></i>
-      </a>
+<footer>
+  <div class="container">
+    <div class="row biography">
+      <div class="col-sm-4">
+        <h2>who am i</h2>
+        <p>{{ site.biography }}</p>
+      </div>
+      <div class="col-sm-4">
+        <h2>what is this</h2>
+        <p>{{ site.description }}</p>
+      </div>
+      <div class="col-sm-4">
+        <h2>where am i</h2>
+          {% if site.email %}
+          <div>
+            <a href="mailto:{{ site.email }}">
+              <span class="username">{{ site.email }}</span>
+            </a>
+          </div>
+          {% endif %}
+          {% if site.github_username %}
+          <div>
+            <a href="https://github.com/{{ site.github_username }}">
+              <span class="username">github//{{ site.github_username }}</span>
+            </a>
+          </div>
+          {% endif %}
+          {% if site.twitter_username %}
+          <div>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <span class="username">twitter//{{ site.twitter_username }}</span>
+            </a>
+          </div>
+          {% endif %}
+          {% if site.linkedin_username %}
+          <div>
+            <a href="https://id.linkedin.com/in/{{ site.linkedin_username }}">
+              <span class="username">linkedin//{{ site.linkedin_username }}</span>
+            </a>
+          </div>
+          {% endif %}
+          {% if site.facebook_username %}
+          <div>
+            <a href="https://www.facebook.com/{{ site.facebook_username }}">
+              <span class="username">facebook//{{ site.facebook_username }}</span>
+            </a>
+          </div>
+          {% endif %}
+      </div>
     </div>
-    <div class="credits">
-      KAGAMI, made with <i class="icon-heart"></i> by Kamikat
+    {% if site.colophon %}
+    <div class="row copyright">
+      <center>{{ site.colophon }}</center>
     </div>
+    {% endif %}
   </div>
-
 </footer>
