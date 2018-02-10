@@ -1,45 +1,43 @@
+# Site Settings
+title: Jekflix | A theme for Jekyll
+email: youremail@xyz.com
+description: Some text about your blog.
+baseurl: "/jekflix-template" # the subpath of your site, e.g. /blog
+url: "https://www.rossener.com" # the base hostname & protocol for your site
+google_analytics: "UA-XXXXXXXX-X"
 
-title: Karna
-desctiption: Karna is a responsive jekyll theme which includes pinterest like pins.
-url: http://webjeda.com/
-permalink: ':title/'
+# User Settings
+username: Jekflix
+user_description: Some text about you.
+disqus_username: disqus_username
 
+# Social Media
+# Remove the item if you don't need it
+github_username: github_username
+facebook_username: facebook_username
+twitter_username: twitter_username
+instagram_username: instagram_username
+linkedin_username: linkedin_username
+medium_username: medium_username
+
+# Build settings
 markdown: kramdown
-baseurl: "/karna"
-full-version: "http://webjeda.com/karna-full/"
+highlighter: rouge
+permalink: /:title/
 
-sass:
-    style: compressed
+# Plugins
+gems:
+  - jemoji
 
-  
-#optimization
-#compress.html
-compress_html:
-  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
-  comments: ["<!-- ", " -->"]
-  endings: [all]
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: []
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/
 
-highlight: rouge
-
-
-# Tracker
-analytics: UA-83979019-1
-
-# Comments
-disqus-shortname: webjeda-demo
-
-# Contact form
-# Go to https://getsimpleform.com and get a API token by signing up with your email and enter that here
-api-token:   
-
-include: [_pages]
-version: 0.8
-
-plugins: 
-    - jekyll-paginate
-    - jekyll-seo-tag
+# Exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules']
