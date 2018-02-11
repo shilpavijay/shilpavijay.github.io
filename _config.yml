@@ -1,9 +1,9 @@
 # Site settings
 title: "Reverie..."
 author: "Shilpa Amberker"
-description: "The word Raverie's literal translates is 'floating in one's thought'. Through this blog I wish to share my Thoughts, Ideas and Views and mainly those i have learnt in the process my search for knowledge. This blog is broadly divide into a few sections but it is hard to classify my varied interests into these sections and hence there is a 'Misc' section where i can talk about a whole lot of things!"
+description: "The word Raverie's literal translates is 'floating in one's thought'. Through this blog I wish to share my Thoughts, Ideas and Views and mainly those i have learnt in the process my search for knowledge."
 keywords: "Software Engineering, Mathematics, Programming, Machine-Learning, Analytics, Sketching, Painting, Photography, Books, Philosophy"
-biography: "I am a Software Developer and an enthusiastic learner. You can find more about me @ <a href='http://kriyavikalpa.com/'>"
+biography: "I am a Software Developer and an enthusiastic learner. <a href='http://kriyavikalpa.com/'> - you can find more about me here"
 colophon: "©2018 Shilpa Amberker. This site is hosted at <a href='https://shilpavijay.github.io/'>Github Pages</a> and created with <3 by <a href='http://jekyllrb.com/'>Jekyll</a>."
 
 baseurl: ""
