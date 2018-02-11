@@ -7,8 +7,8 @@ external-url: https://medium.com/@shilpaAB/microservices-b2171d28a0d1
 categories: Technology
 ---
 
-<div style="width: auto; height: auto;">
-	![microservice](/assets/microservices.png)
+<div class="image-div" style="width: 50%">
+![microservice](/assets/microservices.png)
 </div>
 
 There has been a great deal of talk about Microservice these days. So how exactly is it different from the traditional/monolith architectural design? How is is different from SOA or the Service Oriented Architecture? Here is how I found answers to these questions.
@@ -36,6 +36,6 @@ Multiple replication of data/redundancy can lead to low consistency.
 
 ## References and further reading:
  - [microservices.io](http://microservices.io/)
- - [Microservices by Martin Fowler](https://www.youtube.com/watch?time_continue=1&v=wgdBVIX9ifA)
+ - [Youtube - Microservices by Martin Fowler](https://www.youtube.com/watch?time_continue=1&v=wgdBVIX9ifA)
 
  This article can also be found on Medium - [Microservices by Shilpa](https://medium.com/@shilpaAB/microservices-b2171d28a0d1)
