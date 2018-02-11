@@ -7,7 +7,7 @@ external-url: https://medium.com/@shilpaAB/microservices-b2171d28a0d1
 categories: Technology
 ---
 
-<div style="width: 300px;">
+<div style="width: auto; height: auto;">
 	![microservice](/assets/microservices.png)
 </div>
 
@@ -37,3 +37,5 @@ Multiple replication of data/redundancy can lead to low consistency.
 ## References and further reading:
  - [microservices.io](http://microservices.io/)
  - [Microservices by Martin Fowler](https://www.youtube.com/watch?time_continue=1&v=wgdBVIX9ifA)
+
+ This article can also be found on Medium - [Microservices by Shilpa](https://medium.com/@shilpaAB/microservices-b2171d28a0d1)
