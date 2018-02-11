@@ -7,7 +7,7 @@ external-url: https://medium.com/@shilpaAB/microservices-b2171d28a0d1
 categories: Technology
 ---
 
-<div class="image-div" style="width: 300px;">
+<div style="width: 300px;">
 	![microservice](/assets/microservices.png)
 </div>
 
@@ -23,9 +23,9 @@ There are quite a few perks that come with the Miroservices:
 
 <b>1. Exploring advantages of a variety of data stores. </b> A monolith architecture is restricted to choose a single database/datastore. This prevents the application from leveraging the advantages of other datastores simultaneously. However, each microservice can connect to its own datastore. It can also have its own platform.
 
-2. Enables partial deployments and Agility. Generally, waiting time is a major overhead when deploying products in production is under question. This is because the development time for each feature varies widely. Microservice preserves modularity and offers the benefit of deploying each feature separately. This hence suits Agile development environment.
+<b>2. Enables partial deployments and Agility. </b>Generally, waiting time is a major overhead when deploying products in production is under question. This is because the development time for each feature varies widely. Microservice preserves modularity and offers the benefit of deploying each feature separately. This hence suits Agile development environment.
 
-3. Decentralized Infrastructure. High Availability. Traditional architecture has a dependency on a single database. This causes a ‘single point of failure’. A single corruption/bug is enough to bring the whole application down. Decentralization ensures infrastructure failure remains confined to a single entity without affecting the entire application. Downtime is also significantly reduced.
+<b>3. Decentralized Infrastructure. High Availability. </b>Traditional architecture has a dependency on a single database. This causes a ‘single point of failure’. A single corruption/bug is enough to bring the whole application down. Decentralization ensures infrastructure failure remains confined to a single entity without affecting the entire application. Downtime is also significantly reduced.
 
 ## Challenges:
 
@@ -35,5 +35,5 @@ Testing a microservice application is much more cumbersome compared to a traditi
 Multiple replication of data/redundancy can lead to low consistency.
 
 ## References and further reading:
- - http://microservices.io/
- - https://www.youtube.com/watch?time_continue=1&v=wgdBVIX9ifA
+ - [microservices.io](http://microservices.io/)
+ - [Microservices by Martin Fowler](https://www.youtube.com/watch?time_continue=1&v=wgdBVIX9ifA)
