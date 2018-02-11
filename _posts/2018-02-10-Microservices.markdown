@@ -7,7 +7,7 @@ external-url: https://medium.com/@shilpaAB/microservices-b2171d28a0d1
 categories: Technology
 ---
 
-<div class="image-div" style="width: 600px;">
+<div class="image-div" style="width: 300px;">
 	![microservice](/assets/microservices.png)
 </div>
 
@@ -27,13 +27,13 @@ There are quite a few perks that come with the Miroservices:
 
 3. Decentralized Infrastructure. High Availability. Traditional architecture has a dependency on a single database. This causes a ‘single point of failure’. A single corruption/bug is enough to bring the whole application down. Decentralization ensures infrastructure failure remains confined to a single entity without affecting the entire application. Downtime is also significantly reduced.
 
-### Challenges:
+## Challenges:
 
 Designing an architecture with completely independent services along with language agnostic APIs to communicate between the services can be complex.
 Organization embracing the change is a challenge. Provisioning of Infrastructure, seamless communication between application and devops team, Rapid Application decan prove to be tough.
 Testing a microservice application is much more cumbersome compared to a traditional application.
 Multiple replication of data/redundancy can lead to low consistency.
 
-References and further reading:
+## References and further reading:
  - http://microservices.io/
  - https://www.youtube.com/watch?time_continue=1&v=wgdBVIX9ifA
