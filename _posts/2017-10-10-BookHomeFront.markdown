@@ -7,7 +7,7 @@ external-url:
 categories: Books
 ---
 
-![Home Front](/content/images/2017/04/IMG_20170407_195004-1.jpg =250x)
+![Home Front](/assets/microservices.png =250x)
 
 
 This book is about Love and War! It is about the hardships a woman serving in the Army undergoes. About balancing the needs of her family and the demands of her job. 
