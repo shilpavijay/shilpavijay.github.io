@@ -7,7 +7,7 @@ external-url: https://medium.com/@shilpaAB/microservices-b2171d28a0d1
 categories: Technology
 ---
 
-![microservice](https://mozaicworks.com/wp-content/uploads/2017/02/microservices.png)
+![microservice](https://mozaicworks.com/wp-content/uploads/2017/02/microservices.png =100x20)
 
 
 There has been a great deal of talk about Microservice these days. So how exactly is it different from the traditional/monolith architectural design? How is is different from SOA or the Service Oriented Architecture? Here is how I found answers to these questions.
