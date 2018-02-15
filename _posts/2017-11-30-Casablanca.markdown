@@ -9,7 +9,7 @@ categories: Sketches
 
 <i>Yet beautiful and bright he stood,
 As born to rule the storm...</i>
-- Casabiance(1826)
-  Felicia Hemans
+	Casabiance(1826)
+    Felicia Hemans
 
-![Casabianca](/assets/Ship.jpg)
+![Casabianca](/assets/Ship.jpg){:height="40%" width="95%"}
