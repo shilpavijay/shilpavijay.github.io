@@ -7,7 +7,7 @@ external-url: https://medium.com/@shilpaAB/microservices-b2171d28a0d1
 categories: Technology
 ---
 
-![microservice](/assets/microservices.png){:height="450px" width="700px"}
+![microservice](/assets/microservices.png){:height="40%" width="95%"}
 
 
 There has been a great deal of talk about Microservice these days. So how exactly is it different from the traditional/monolith architectural design? How is is different from SOA or the Service Oriented Architecture? Here is how I found answers to these questions.
@@ -16,7 +16,7 @@ Microservices in simple words is a way of decentralizing an application into sma
 
 We can assertively say that microservices are quite similar to SOA. We can imagine microservices to be a small portion of a much bigger entity called the SOA. Microservices can be deployed independently whereas SOA is deployed as a single monolith. SOA is majorly focused on re-use of services unlike microservices which is all about decoupling.
 
-![SOA](/assets/SOA.png)
+![SOA](/assets/SOA.png){:height="40%" width="60%"}
 
 There are quite a few perks that come with the Miroservices:
 
