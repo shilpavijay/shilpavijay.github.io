@@ -12,4 +12,4 @@ As born to rule the storm...</i>
 Casabiance(1826)
 by Felicia Hemans
 
-![Casabianca](/assets/ship.jpg){:height="70%" width="70%"}
+![Casabianca](/assets/ship.jpg){:height="70%" :width="70%"}
