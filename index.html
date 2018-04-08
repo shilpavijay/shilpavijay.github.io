@@ -1,61 +1,703 @@
----
-layout: default
----
-<div class="container main">
-  <div class="row">
-    <header>
-      <div><center><h1>{{ site.title }}</h1></center></div>
-      <center>
-        <span class="big-ornament">
-          <svg viewBox="310 350 400 350">
-            <path d="M24.403,568.588c44.369-42.193,98.197-60.552,155.345-66.541
-          		c66.447-6.884,174.35,3.493,387.062,60.889c99.271,26.832,204.424,52.25,308.648,46.676c27.17-1.396,62.652-4.395,84.24-21.916
-          		c15.361-12.389,21.846-31.809,15.269-44.855c-4.483,14.617-16.188,29.406-37.445,41.943c-57.07,33.639-135.297,6.318-153.995-2.488
-          		c-51.001-23.928-78.822-61.809-82.731-98.845c-5.244-48.926,42.029-83.403,105.159-67.616c20.74,5.239,37.366,14.2,49.4,24.421
-          		c35.993,30.489,7.245,63.216-17.765,58.476c-0.416-0.087-1.146-0.747,0.164-1.084c6.406-0.742,13.542-6.061,16.117-14.283
-          		c4.663-14.699-3.07-29.32-17.199-40.871c-29.156-23.833-73.335-35.467-106.816-12.458c-10.551,7.234-15.621,16.615-18.267,25.913
-          		c-3.744,13.212-1.664,27.091,4.819,40.621c11.964,24.999,33.638,44.53,56.977,59.389c28.409,18.189,59.888,28.912,89.302,32.492
-          		c14.46,1.648,29.477,1.734,43.852-0.598c-21.259-35.545,12.37-63.043,35.058-65.527c14.192-1.5,25.654,2.084,33.292,8.883
-          		c1.907-19.438-12.206-36.296-38.457-47.015c-7.638-2.571-4.475-10.135,3.423-7.469c27.725,9.878,39.188,34.552,37.036,56.398
-          		c10.621,11.211,12.033,29.406,0.069,47.838c-7.301,11.219-20.347,22.42-37.357,30.066c-38.042,14.209-85.143,19.783-129.243,17.615
-          		c-71.688-1.57-177.098-30.818-285.813-58.059C391.966,537.266,158.074,467.333,24.403,568.588L24.403,568.588z M715.083,587.184
-          		c-46.504-11.453-95.778-78.15-144.198-44.594C591.555,554.717,669.388,573.643,715.083,587.184L715.083,587.184z M783.362,591.84
-          		c-46.268-11.955-89.043-82.304-127.751-68.602C663.657,566.846,735.014,590.6,783.362,591.84L783.362,591.84z M973.317,540.014
-          		c-4.984-6.979-14.467-11.539-29.231-10.959c-6.563,0.252-16.611,3.895-22.932,10.379c-10.463,10.715-13.462,28.652,5.566,43.189
-          		c11.532-4.16,22.341-10.299,31.494-19.107C965.759,556.201,970.909,548.232,973.317,540.014z"/>
-        		<path d="M24.403,563.689c44.369-42.193,98.197-60.551,155.345-66.537
-        			c66.447-6.982,174.35,3.49,387.062,60.893c99.271,26.824,204.424,52.242,308.648,46.668c27.17-1.396,62.652-4.395,84.24-21.916
-        			c25.409-20.615,26.579-60.234-15.613-58.641c-6.563,0.252-16.611,3.807-22.932,10.377c-10.629,10.795-13.534,28.982,6.146,43.695
-        			c-6.979,4.309-17.457,6.641-19.845,6.146c-23.182-36.221,11.123-64.465,34.141-66.949c37.107-4,55.892,27.07,35.363,58.635
-        			c-7.301,11.219-20.347,22.436-37.357,30.066c-38.042,14.207-85.143,19.766-129.243,17.617
-        			c-71.688-1.588-177.098-30.822-285.813-58.061C391.966,532.289,158.074,462.436,24.403,563.689z"/>
-        		<path d="M974.552,529.307c-1.398,10.205-6.973,20.348-16.337,29.312
-        			c-25.019,24.004-61.897,28.902-95.527,24.836c-29.414-3.484-60.893-14.207-89.302-32.404
-        			c-23.339-14.859-45.013-34.383-56.977-59.381c-6.483-13.542-8.563-27.408-4.819-40.62c2.646-9.299,7.716-18.691,18.267-25.917
-        			c33.481-23.001,77.66-11.375,106.816,12.458c14.129,11.556,21.862,26.177,17.199,40.875c-2.575,8.223-9.711,13.537-16.117,14.283
-        			c-1.31,0.341-0.58,0.998-0.164,1.083c25.01,4.729,53.758-27.997,17.765-58.479c-12.034-10.22-28.66-19.193-49.4-24.418
-        			c-63.13-15.786-110.403,18.688-105.159,67.617c3.909,37.052,31.73,74.917,82.731,98.837c18.698,8.814,96.925,36.125,153.995,2.496
-        			c25.583-15.033,37.366-33.309,39.273-50.752c2.496-22.093-8.87-47.261-36.941-57.309c-7.897-2.665-11.061,4.816-3.423,7.469
-        			C964.024,490.594,978.224,508.527,974.552,529.307z"/>
-        		<path d="M783.362,586.941c-48.349-1.24-119.705-24.994-127.751-68.602
-        			C694.319,504.626,737.095,574.986,783.362,586.941z"/>
-        		<path d="M715.083,582.295c-45.695-13.551-123.528-32.477-144.198-44.605
-        			C619.305,504.135,668.579,570.832,715.083,582.295z"/>
-          </svg>
-        </span>
-      </center>
-    </header>
-  </div>
-  <div class="row">
-    <div class="col-md-1"></div>
-    <div class="col-md-8 offset-md-1">
-      {% assign categories = site.categories | sort %}
-      {% for category in categories %}
-      <h3>On {{ category | first }}</h3>
-      <p>{% for posts in category %} {% for post in posts %}
-            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>{% if forloop.last == false %},&nbsp;&nbsp;{% endif %}
-        {% endfor %} {% endfor %}  </p>
-      {% endfor %}
-    </div>
-  </div>
-</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shilpa Amberker</title>
+<!--mobile apps-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--mobile apps-->
+
+<!--web-fonts-->
+<link href='//fonts.googleapis.com/css?family=Overlock:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+<!--//web-fonts-->
+
+<!--Custom Theme files-->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="css/swipebox.css">
+
+
+<!--//Custom Theme files-->
+<!--js-->
+<script src="js/jquery-1.11.1.min.js"></script> 
+<!-- //js -->
+
+
+
+<!--start-smooth-scrolling-->
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/drilldown.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script type="text/javascript" src="js/resume.js"></script>
+
+<!--//end-smooth-scrolling-->
+</head>
+<body>
+	<!--banner-->
+	<div id="home" class="banner">
+		<div class="banner-info">
+			<div class="container">
+				<div class="col-md-4 header-left">
+					<img src="images/img1.jpg" alt=""/>
+				</div>
+				<div class="col-md-8 header-right">
+					<h2>Hello</h2>
+					<h1>I'm Shilpa Amberker</h1>
+					<h6>Sofware Developer, an Enthusiastic Learner</h6>
+					<ul class="address">
+						<!-- <li>
+							<ul class="address-text">
+								<li><b>D.O.B</b></li>
+								<li>23-06-1980</li>
+							</ul>
+						</li> -->
+						<!-- <li>
+							<ul class="address-text">
+								<li><b>PHONE </b></li>
+								<li>+00 111 222 3333</li>
+							</ul>
+						</li> -->
+						<li>
+							<ul class="address-text">
+								<li><b>GIT </b></li>
+								<li><a href="https://github.com/shilpavijay">github.com/shilpavijay</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>E-MAIL </b></li>
+								<li><a href="mailto:shilpa.amberker@gmail.com"> shilpa.amberker@gmail.com</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>LinkedIn </b></li>
+								<li><a href="https://in.linkedin.com/in/shilpaamberker">in.linkedin.com/in/shilpaamberker</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul class="address-text">
+								<li><b>Blog </b></li>
+								<li><a href="http://blog.kriyavikalpa.com/">blog.kriyavikalpa.com</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//banner-->
+	<!--top-nav-->
+	<div class="top-nav wow">
+		<div class="container">
+			<div class="navbar-header logo">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					Menu
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="menu">
+					<ul class="nav navbar">
+						<li><a href="#about" class="scroll">About</a></li>
+						<li><a href="#work" class="scroll">Experience</a></li>
+						<li><a href="#projects" class="scroll">My Projects</a></li>
+						<li><a href="#education" class="scroll">Education</a></li>
+						<li><a href="#skills" class="scroll">Skills</a></li>						
+						<li><a href="http://blog.kriyavikalpa.com/">Blog</a></li>
+						<li><a href="http://blog.kriyavikalpa.com/contact-me/">Contact</a></li>
+					</ul>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<!--//top-nav-->
+	<!--about-->
+	
+	<div id="about" class="about">
+		<div class="container">
+			<h3 class="title"> About Me</h3>
+			<div class="row">
+			<div class="col-md-8 about-left">
+				<p>Hi, I am a Computer Science Graduate from <b>Visveswaraya Technological University, Karnataka </b>working as a Software Developer since 6 years. Love solving problems and coding in <b> Python.</b> I like learning new Technologies and languages.
+				Passionate about <b>Bioinformatics, Data Analytics and Machine Learning. </b></p>
+				<br/>
+				<p>My hobbies include Reading lots of <b>Books</b> - Fiction and Non-fiction, <b>Photography,</b> Sketching/Drawing and <b>Music.</b> </p>
+				<br/>
+				<p>I also like involving myself in Volunteering Activities. Some of them i have been part of are: 
+				<li>Youth Professional Ambassor for <b>Teach for India</b> from 2012-2013</li>
+				<li><b>Youth for Seva</b> Volunteer since 2013</li>
+				<li>Volunteer for <b>Rang De</b> since 2015</li>
+				<li>Member of <b>CSR commitee and Green Team</b> at my Organization</li>
+				</p>				
+			</div>
+
+			<div class="col-md-4 about-right">
+				<ul>
+					<h5>Accomplishments</h5>
+					<li class="accomplishment"><span class="glyphicon glyphicon-menu-right"></span> <b> Machine Learning by Stanford University on Coursera.</b><br/>
+					<a href="https://www.coursera.org/account/accomplishments/certificate/8KZ7HTZ5YKGW">Link to Coursera certificate</a></li>
+					<li class="accomplishment"><span class="glyphicon glyphicon-menu-right"></span> <b> Data Visualization with D3.js </b><br/>
+					<a href="https://www.udemy.com/certificate/UC-S5AA4MEU/">Link to Udemy certificate </a></li>
+					<li><span class="glyphicon glyphicon-menu-right"></span> <b>Wells Fargo - Achieving Excellence Award </b>2016 - Q1 </li>
+				</ul>
+				<div class="clearfix"> </div>
+			</div>
+
+			
+	<!-- 	</div> -->
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<br />
+	<br />
+	<!--//about-->
+	<!--work-experience-->
+	<div id="work" class="work">
+		<div class="container">
+			<h3 class="title">Work Experience</h3>
+			
+			<div class="work-info"> 
+				<div class="col-md-6 work-right work-right2"> 
+					<h4>Jan 2018 - Present </h4>
+				</div>
+				<div class="col-md-6 work-left work-left2"> 
+					<h5> Accenture <span class="glyphicon glyphicon-briefcase"> </span></h5>
+					<p>Currenly working as <b> Analytics and Modeling Specialist</b></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+
+			<div class="work-info">
+				<div class="col-md-6 work-left"> 
+					<h4>May 2017 - Nov 2017</h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span> Mphasis</h5>
+					<p><b>Module Lead </b>in the Banking and Finance Account of the Company. Worked on developing a web application for a major US bank. Also worked on a POC - An application on Version Control Metric Analytics</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+			<div class="work-info"> 
+				<div class="col-md-6 work-right work-right2"> 
+					<h4>Aug 2016 - Apr 2017</h4>
+				</div>
+				<div class="col-md-6 work-left work-left2"> 
+					<h5> Freelancing <span class="glyphicon glyphicon-briefcase"> </span></h5>
+					<p>Work on Data Analytics, Visualization, Web Development, Design and Writing.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>Jun 2014 - Jul 2016 </h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-briefcase"> </span> Wells Fargo</h5>
+					<p>Worked as <b>Senior Analyst </b>in the Retail Lending division of the Bank on a highly critical Application. Earned multiple accolades and appreciations from business partners for consistent, precise and timely delivery.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-right work-right2"> 
+					<h4>Nov 2010 - May 2014 </h4>
+				</div>
+				<div class="col-md-6 work-left work-left2"> 
+					<h5> Tech Mahindra <span class="glyphicon glyphicon-briefcase"> </span></h5>
+					<p>Worked in implementing, coding and optimizing modules. Been a part of various projects for two different clients. Appreciated for seamlessly integrating with different teams and being a quick learner. Also independently coded few internal tools for Automation.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			
+		</div>
+	</div>
+	<!--//work-experience-->
+
+	<div id="projects" class="portfolio">
+		<div class="container">
+			<h3 class="title wow zoomInLeft animated" data-wow-delay=".5s">My Projects</h3>
+			<div class="sap_tabs">			
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+					<ul class="resp-tabs-list wow fadeInUp animated" data-wow-delay=".7s">
+						<li class="resp-tab-item"><span>All</span></li>
+						<li class="resp-tab-item"><span>Web</span></li>
+						<li class="resp-tab-item"><span>Data Analytics/ML/AI</span></li>
+						<!-- <li class="resp-tab-item"><span>Wordpress</span></li>					 -->
+					</ul>	
+					<div class="clearfix"> </div>	
+					<div class="resp-tabs-container">
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+							<br/>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/Follow-Me">
+											<img src="images/followme.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3 color="black"><span>Follow Me</span></h3>
+												<p>A twitter clone implemented using Django, JQuery and AJAX</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+						
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/QandA">
+											<img src="images/qanda.png" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span> QandA</span></h3>
+												<p>A question and answer forum built using Django & JQuery.</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/All-About-Books">
+											<img src="images/books.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>All About Books</span></h3>
+												<p> A CMS for Books with shopping cart, built in Django - Mezzanine and Cartridge. </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/cashflow">
+											<img src="images/expense.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>Cash Flow</span></h3>
+												<p>Expense calculator - AngularJS, Flask and MySql </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+						
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/Sentimental-Chirps">
+											<img src="images/sentitweet.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>Sentimental-Chirps</span></h3>
+												<p> Sentiment Analysis on Tweets using Natural Language Processing and Machine Learning. </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/Stance">
+											<img src="images/prodreview.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>Stance</span></h3>
+												<p> Opinion Mining - Product Review Classification with Machine Learning and NLTK </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/Machine-Learning-in-Octave">
+											<img src="images/ml.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>Machine Learning</span></h3>
+												<p>Machine Learning concepts and algorithms implemented in  Octave </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/Experceive">
+											<img src="images/experceive.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>Experceive</span></h3>
+												<p>Data Analysis and Visualization of Expenses </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/Tableau">
+											<img src="images/Population.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>Tableau</span></h3>
+												<p>Analysis and Visualization using Tableau </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/D3js-Charts">
+											<img src="images/scatterplot.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>D3.js Charts</span></h3>
+												<p>Data Visualization with D3.js </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+
+
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/Follow-Me">
+											<img src="images/followme.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3 color="black"><span>Follow Me</span></h3>
+												<p>A twitter clone implemented using Django, JQuery and AJAX</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/QandA">
+											<img src="images/qanda.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span> QandA</span></h3>
+												<p>A question and answer forum built using Django & JQuery.</p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/All-About-Books">
+											<img src="images/books.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>All About Books</span></h3>
+												<p> A CMS for Books with shopping cart, built in Django - Mezzanine and Cartridge. </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/cashflow">
+											<img src="images/expense.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>Cash Flow</span></h3>
+												<p>Expense calculator - AngularJS, Flask and MySql </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="tab-1 resp-tab-content">
+							<div class="tab_img">
+							   <p>Data Analytics, Machine Learning and Artificial Intelligence</p>
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/Sentimental-Chirps">
+											<img src="images/sentitweet.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>Sentimental-Chirps</span></h3>
+												<p> Sentiment Analysis on Tweets implemented using Natural Language Processing and Machine Learning. </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/Stance">
+											<img src="images/prodreview.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>Stance</span></h3>
+												<p> Opinion Mining - Product Review Classification with Machine Learning and NLTK </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+								
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/Machine-Learning-in-Octave">
+											<img src="images/ml.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>Machine Learning</span></h3>
+												<p>Machine Learning concepts and algorithms implemented in  Octave </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/Experceive">
+											<img src="images/experceive.jpg" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>Experceive</span></h3>
+												<p>Data Analysis and Visualization of Expenses </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/Tableau">
+											<img src="images/Population.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>Tableau</span></h3>
+												<p>Analysis and Visualization using Tableau </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								<div class="col-md-4 portfolio-grids">
+									<div class="grid">
+										<a href="https://github.com/shilpavijay/D3js-Charts">
+											<img src="images/scatterplot.png" alt="" class="img-responsive" />
+											<div class="figcaption">
+												<h3><span>D3.js Charts</span></h3>
+												<p>Data Visualization with D3.js </p>
+											</div>
+										</a>	
+									</div>
+								</div>
+
+								
+
+
+							</div>
+						</div>
+
+						
+					</div>
+				</div>  <!--  horizontal tab -->
+
+			</div>
+			<!--ResponsiveTabs-->
+			<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+			 <script type="text/javascript">
+				$(document).ready(function () {
+					$('#horizontalTab').easyResponsiveTabs({
+						type: 'default', //Types: default, vertical, accordion           
+						width: 'auto', //auto or any width like 600px
+						fit: true   // 100% fit in a container
+					});
+				});		
+			</script>
+			<!--//ResponsiveTabs-->
+			<!-- swipe box js -->
+			<script src="js/jquery.swipebox.min.js"></script> 
+				<script type="text/javascript">
+					jQuery(function($) {
+						$(".swipebox").swipebox();
+					});
+			</script>
+			<!-- //swipe box js -->
+		</div>
+	</div>
+	<!--//portfolio-->
+
+
+	<!--education-->
+	<div id="education" class="education">
+		<div class="container">
+			<h3 class="title">Education</h3>
+			<div class="work-info"> 
+				<div class="col-md-6 work-right work-right2"> 
+					<h4>Machine Learning by Stanford University - 2017</h4>
+				</div>
+				<div class="col-md-6 work-left work-left2"> 
+					<h5> Coursera <span class="glyphicon glyphicon-education"></span></h5>
+					<p> Achieved 100% </p>
+					<p><a href="https://www.coursera.org/account/accomplishments/certificate/8KZ7HTZ5YKGW">View Course Certificate</a></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>Bachelor's Degree - 2010</h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-education"> </span> VTU - Visveswaraya Technological University </h5>
+					<p> Among Top 10% students in the department with an aggregate of 72.2%</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-right work-right2"> 
+					<h4>Pre-University Course(XII) - 2006</h4>
+				</div>
+				<div class="col-md-6 work-left work-left2"> 
+					<h5> Karnataka PU Board <span class="glyphicon glyphicon-education"></span></h5>
+					<p> Aggregate: 78.2% </p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="work-info"> 
+				<div class="col-md-6 work-left"> 
+					<h4>Class X - 2004</h4>
+				</div>
+				<div class="col-md-6 work-right"> 
+					<h5><span class="glyphicon glyphicon-education"> </span> TVS School, CBSE</h5>
+					<p> Aggregate: 82%</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--//education-->
+	
+	
+
+	<!--skills-->
+	<div id="skills" class="skills">
+		<div class="container">
+			<h3 class="title">Skills</h3>
+				<div id="skillchart" style="min-width: 360px; max-width: 700px; height: 450px; margin-top: 0px; margin-left: 260px; background-color: 'black';">
+				</div>
+				<br/>
+			<!-- <div class="skills-info">
+				<div class="col-md-6 bar-grids">
+					<h6>Python  <span> 90% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 90%">
+						</div>
+					</div>
+					<h6>UI DESIGN & DEVELOPER <span> 70% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 70%">
+						</div>
+					</div>
+					<h6>HTML/CSS<span>90% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 90%">
+						</div>
+					</div>
+					<h6>PHOTOSHOP <span> 75% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 75%">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 bar-grids">
+					<h6>PROJECT MANAGEMENT <span> 85% </span></h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped active" style="width: 85%">
+						</div>
+					</div>
+					<h6>SOCIAL MEDIA MARKETING<span> 95% </span></h6>
+					
+				</div>
+				<div class="clearfix"> </div>
+			</div> -->
+		</div>
+	</div>
+	<!--//education-->
+	<!--portfolio-->
+
+<!-- 	<div id="blog" class="education">
+	<p>Coming soon...</p>
+	</div> -->
+
+
+	<!--contact -->
+	<!-- <div class="welcome contact" id="contact">
+		<div class="container">
+			<h3 class="title">Contact Us</h3>
+			<div class="contact-row">
+				<div class="col-md-6 contact-left">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250261.21285550427!2d-60.42919264432581!3d46.13039392716506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b67ef033cc4082f%3A0xbf0517bb7d9ecd34!2sNorth+Sydney%2C+NS%2C+Canada!5e0!3m2!1sen!2sin!4v1460613320469"></iframe>
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div> -->
+	<!--//contact -->
+	<!--footer-->
+	<div class="footer">
+		<div class="container">
+			<p> &copy 2018 Shilpa Amberker </p>
+		</div>
+	</div>
+	<!--//footer-->
+	<!--smooth-scrolling-of-move-up-->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!--//smooth-scrolling-of-move-up-->
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/bootstrap.js"></script>
+
+
+    <!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-83518664-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
